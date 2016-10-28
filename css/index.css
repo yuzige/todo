@@ -1,0 +1,550 @@
+@charset "UTF-8";
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  html {
+    font-size: 189.72222px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 177.77778px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 266.66667px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  html {
+    font-size: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 106.66667px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 57.5px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 57.22222px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 53.33333px;
+  }
+}
+
+@media screen and (min-width: 380px) {
+  html {
+    font-size: 52.77778px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 52.08333px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 44.44444px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  background-color: #ebebeb;
+  font-family: '微软雅黑',sans-serif;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url(../font/iconfont.woff);
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.icon-shanchu:before {
+  content: "\e60d";
+}
+
+.icon-shanchu1:before {
+  content: "\e66a";
+}
+
+.icon-fanhui:before {
+  content: "\e635";
+}
+
+.icon-yanse:before {
+  content: "\e74f";
+}
+
+.icon-huatong:before {
+  content: "\e6b2";
+}
+
+.first {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/login.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+
+#shouye {
+  background-image: url(../img/shouye.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: transform .8s ease;
+  transform: translate3d(0, 0, 0);
+}
+
+#shouye .work {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-image: url(../img/work.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 4rem;
+}
+
+#shouye .work:active {
+  -moz-box-shadow: 10px 10px 17px #fffc4d;
+  -webkit-box-shadow: 10px 10px 17px #fffc4d;
+  box-shadow: 10px 10px 17px #fffc4d;
+}
+
+#shouye .study {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url(../img/study.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 4rem;
+}
+
+#shouye .study:active {
+  -moz-box-shadow: 10px 10px 17px #fffc4d;
+  -webkit-box-shadow: 10px 10px 17px #fffc4d;
+  box-shadow: 10px 10px 17px #fffc4d;
+}
+
+#shouye .life {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-image: url(../img/life.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 4rem;
+}
+
+#shouye .life:active {
+  -moz-box-shadow: 10px 10px 17px #fffc4d;
+  -webkit-box-shadow: 10px 10px 17px #fffc4d;
+  box-shadow: 10px 10px 17px #fffc4d;
+}
+
+#shouye .login {
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-image: url(../img/login.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40%;
+  height: 1rem;
+}
+
+#shouye.jinru {
+  transform: translate3d(-100%, 0, 0);
+}
+
+#work {
+  background-image: url(../img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: transform .5s ease;
+  transform: translate3d(0, 100%, 0);
+}
+
+#work.in {
+  transform: translate3d(0, 0, 0);
+}
+
+#study {
+  background-image: url(../img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: transform .5s ease;
+  transform: translate3d(0, 100%, 0);
+}
+
+#study.in {
+  transform: translate3d(0, 0, 0);
+}
+
+#life {
+  background-image: url(../img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: transform .5s ease;
+  transform: translate3d(0, 100%, 0);
+}
+
+#life.in {
+  transform: translate3d(0, 0, 0);
+}
+
+#login {
+  background-image: url(../img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: transform .5s ease;
+  transform: translate3d(0, 100%, 0);
+}
+
+#login.in {
+  transform: translate3d(0, 0, 0);
+}
+
+.header {
+  width: 100%;
+  height: 1.1rem;
+  box-sizing: border-box;
+  background-image: url(../img/shouye.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 1px solid transparent;
+}
+
+.header ul {
+  margin: 0.3rem;
+  position: relative;
+}
+
+.header ul:after {
+  content: '';
+  display: block;
+  clear: both;
+  position: relative;
+}
+
+.header ul li {
+  float: left;
+  width: 0.5rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  font-size: 0.35rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header ul .back {
+  color: #6c6c6c;
+}
+
+.header ul .life {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 0.5rem;
+  color: #6C6C6C;
+  width: 3rem;
+}
+
+.header ul .life input {
+  width: inherit;
+  border: none;
+  background-color: transparent;
+  font-size: 0.5rem;
+  color: #6C6C6C;
+  text-align: center;
+  outline: none;
+}
+
+.header ul .delete {
+  float: right;
+  color: #757575;
+  margin-top: -0.05rem;
+}
+
+.add {
+  width: 100%;
+  height: 1.2rem;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  margin: 0.2rem 0;
+}
+
+.add .input {
+  margin: 0.4rem 0.1rem 0.3rem 0.4rem;
+  width: 4.5rem;
+  height: 0.5rem;
+  text-align: left;
+  line-height: 0.5rem;
+  color: #757575;
+  float: left;
+  border-bottom: 3px solid #455a64;
+}
+
+.add .input input {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 0.3rem;
+  font-size: 0.3rem;
+  padding-left: 0.1rem;
+}
+
+.add .button {
+  float: right;
+  width: 1.6rem;
+  height: 0.7rem;
+  margin-top: 0.25rem;
+  margin-right: 0.4rem;
+  font-size: 0.5rem;
+  line-height: 0.7rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: #1bcfff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #ff7086;
+}
+
+.list {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: inherit;
+}
+
+.list ul {
+  margin: 0 0.4rem;
+}
+
+.list ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.list ul li {
+  height: 1rem;
+  padding: 0.35rem 0;
+  position: relative;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  line-height: 1rem;
+}
+
+.list ul li .check {
+  width: 0.4rem;
+  height: 0.4rem;
+  float: left;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-right: 1rem;
+}
+
+.list ul li .check input {
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #6c6c6c;
+  font-weight: 100;
+  line-height: 1rem;
+}
+
+.list ul li span {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 2rem;
+  width: 66%;
+  height: inherit;
+  overflow: hidden;
+}
+
+.list ul li span input {
+  font-size: 0.6rem;
+  color: #d38c01;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  display: inline-block;
+  width: inherit;
+}
+
+.list ul li i {
+  display: none;
+  float: right;
+  font-size: 0.4rem;
+  line-height: 1rem;
+}
+
+.list ul li.done {
+  color: rgba(4, 4, 56, 0.12);
+}
+
+.list ul li.done i {
+  color: red;
+  display: block;
+}
+
+.list ul li.done span {
+  color: rgba(4, 4, 56, 0.12);
+}
+
+.list ul li.done:after {
+  content: '';
+  width: 60%;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2rem;
+  margin: auto;
+  background-color: #6c6c6c;
+}
+
+.list ul li.out {
+  animation: outs .5s ease both;
+}
+
+@keyframes outs {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1, 1);
+  }
+  100% {
+    transform: translate3d(0, 500px, 0) scale(0, 0);
+  }
+}
+
+.yuyin {
+  width: 100%;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 10;
+  line-height: 2rem;
+  text-align: center;
+  background-color: rgba(234, 153, 255, 0.4);
+}
+
+.yuyin i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #c27edd;
+  height: 1.5rem;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 0.7rem;
+  color: #ffffff;
+}
